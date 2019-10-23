@@ -20,4 +20,4 @@ transaction_pct = 0.005
 kwargs = {'currency': currency, 'granularity':granularity, 'capital':capital, 'transaction_pct':transaction_pct,
           'data_path':data_path}
 
-register(id='crypto-gym-v0', entry_point='crypto_gym.envs:CryptoEnv', kwargs=kwargs.copy())
+register(id='crypto-gym-v0', entry_point='gym_crypto.envs:CryptoEnv', kwargs=kwargs.copy())
