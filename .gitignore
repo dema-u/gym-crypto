@@ -1,0 +1,9 @@
+# Python
+.ipynb_checkpoints*
+.pytest_cache*
+__pycache__*
+.idea
+
+#Distribution/ Packaging
+dist/
+*.egg-info/
