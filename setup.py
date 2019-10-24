@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(name='gym-crypto',
       packages=['gym_crypto'],
-      version='0.0.1',
+      version='0.0.2',
       licence='MIT',
       description='Reinforcement Learning OpenAI Gym environment for crypto-currency trading.',
       long_description=long_description,
