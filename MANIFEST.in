@@ -1,0 +1,2 @@
+include gym_crypto/data/*.csv
+include README.md
