@@ -84,7 +84,7 @@ class CryptoEnv(gym.Env):
         self.np_random, seed = seeding.np_random(seed)
         return [seed]
 
-    def set_simulation_window(self, start_date, end_date):
+    def _set_simulation_window(self, start_date, end_date):
 
         self.start_index = self._dates[self._dates == start_date].index.item()
         self.end_index = self._dates[self._dates == end_date].index.item()
@@ -98,7 +98,7 @@ class CryptoEnv(gym.Env):
         self.transaction_pct = config['transaction_pct']
         self.capital = config['capital']
 
-        self.set_simulation_window(config['start_date'], config['end_date'])
+        self._set_simulation_window(config['start_date'], config['end_date'])
 
     @property
     def currency(self):
@@ -122,8 +122,8 @@ class CryptoEnv(gym.Env):
 
     @granularity.setter
     def granularity(self, granularity):
-        if granularity != '15min':
-            raise NotImplementedError('Only 15min granularity is implemented so far.')
+        if granularity != '30min':
+            raise NotImplementedError('Only 30min granularity is implemented so far.')
         else:
             self._granularity = granularity
 

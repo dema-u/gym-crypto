@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(name='gym-crypto',
       packages=find_packages(exclude='tests'),
       include_package_data=True,
-      version='0.0.3',
+      version='0.0.4',
       licence='MIT',
       url='https://github.com/dema-u/gym-crypto',
       description='Reinforcement Learning OpenAI Gym environment for crypto-currency trading.',
